@@ -43,57 +43,8 @@ esoc_name=`cat /sys/bus/esoc/devices/esoc0/esoc_name 2> /dev/null`
 
 target=`getprop ro.board.platform`
 
-#
-# Override USB default composition
-#
-# If USB persist config not set, set default configuration
-
-debuggable=`getprop ro.debuggable`
-
-if [ "$(getprop persist.vendor.usb.config)" == "diag,serial_cdev,rmnet,dpl,qdss,adb" \
-	-o "$(getprop persist.vendor.usb.config)" == "" -a \
-	"$(getprop init.svc.vendor.usb-gadget-hal-1-0)" != "running" ]; then
-    if [ "$esoc_name" != "" ]; then
-	  setprop persist.vendor.usb.config diag,diag_mdm,qdss,qdss_mdm,serial_cdev,dpl,rmnet,adb
-    else
-	  case "$(getprop ro.baseband)" in
-	      "apq")
-	          setprop persist.vendor.usb.config diag,adb
-	      ;;
-	      *)
-	      case "$soc_hwplatform" in
-	          "Dragon" | "SBC")
-	              setprop persist.vendor.usb.config diag,adb
-	          ;;
-                  *)
-		  case "$soc_machine" in
-		    "SA")
-	              setprop persist.vendor.usb.config diag,adb
-		    ;;
-		    *)
-	            case "$target" in
-	              "bengal")
-			      case "$debuggable" in
-				  "1")
-					  setprop persist.vendor.usb.config adb
-					  ;;
-				  *)
-					  setprop persist.vendor.usb.config none
-					  ;;
-				  esac
-		      ;;
-	              *)
-		          setprop persist.vendor.usb.config diag,adb
-		      ;;
-		     esac
-		    ;;
-		  esac
-	          ;;
-	      esac
-	      ;;
-	  esac
-      fi
-fi
+# Clear vendor USB config because it is only needed for debugging
+setprop persist.vendor.usb.config ""
 
 # This check is needed for GKI 1.0 targets where QDSS is not available
 if [ "$(getprop persist.vendor.usb.config)" == "diag,serial_cdev,rmnet,dpl,qdss,adb" -a \
