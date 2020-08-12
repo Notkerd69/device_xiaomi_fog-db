@@ -344,6 +344,10 @@ DEVICE_PACKAGE_OVERLAYS += \
 
 PRODUCT_ENFORCE_RRO_TARGETS := *
 
+# LibQti Perf
+PRODUCT_PACKAGES += \
+    libqti-perfd-client
+
 # PocketMode
 PRODUCT_PACKAGES += \
     PocketMode
