@@ -112,8 +112,9 @@ IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.-->
         <!-- Config for B2C Enriched Calls Feature support -->
         <boolean name="carrier_b2c_enriched_calling_supported_bool" value="false"/>
 
-        <!-- Allow VoLTE and WFC by default -->
+        <!-- Show VoLTE and VoWIFI for all -->
         <boolean name="carrier_volte_available_bool" value="true" />
+        <boolean name="carrier_vt_available_bool" value="true" />
         <boolean name="carrier_wfc_ims_available_bool" value="true" />
     </carrier_config>
 
