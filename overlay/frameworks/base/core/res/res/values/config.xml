@@ -743,4 +743,8 @@
     <!-- Flag indicating whether notification and ringtone volumes
          are controlled together (aliasing is true) or not. -->
     <bool name="config_alias_ring_notif_stream_types">false</bool>
+
+    <!-- Should the pinner service pin the Camera application? -->
+    <bool name="config_pinnerCameraApp">false</bool>
+
 </resources>
