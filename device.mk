@@ -341,7 +341,8 @@ PRODUCT_PACKAGES += \
     SettingsProviderFog \
     SystemUIFog \
     TelephonyFog \
-    WifiFog
+    WifiFog \
+    NotchBarKiller
 
 # Partitions
 PRODUCT_USE_DYNAMIC_PARTITIONS := true
