@@ -279,6 +279,9 @@ ro.vendor.qspm.enable=true
 vendor.pasr.activemode.enabled=true
 vendor.power.pasr.enabled=true
 
+# Printk
+persist.vendor.console.silent.config=1
+
 # Radio
 persist.radio.multisim.config=dsds
 persist.vendor.data.iwlan.enable=true
