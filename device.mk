@@ -409,6 +409,7 @@ PRODUCT_PACKAGES += \
     init.qcom.rc \
     init.qcom.usb.rc \
     init.recovery.qcom.rc \
+    init.bengal.perf.rc \
     init.target.rc \
     ueventd.qcom.rc
 
