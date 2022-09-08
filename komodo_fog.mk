@@ -15,7 +15,7 @@ $(call inherit-product, vendor/komodo/config/common.mk)
 $(call inherit-product, device/xiaomi/fog/device.mk)
 
 # Komodo Stuff
-KOMODO_OFFICIAL := false
+KOMODO_OFFICIAL := true
 KOMODO_GAPPS_TYPE := gapps
 KOMODO_VARIANT := RELEASE
 
