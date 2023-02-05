@@ -340,7 +340,8 @@ PRODUCT_PACKAGES += \
     SettingsFog \
     SettingsProviderFog \
     SystemUIFog \
-    TelephonyFog
+    TelephonyFog \
+    WifiResCommon
 
 # Partitions
 PRODUCT_USE_DYNAMIC_PARTITIONS := true
@@ -528,7 +529,6 @@ PRODUCT_PACKAGES += \
     TetheringConfigOverlay \
     vendor.qti.hardware.wifi.hostapd@1.2.vendor \
     vendor.qti.hardware.wifi.supplicant@2.1.vendor \
-    WifiResCommon \
     wpa_supplicant \
     wpa_supplicant.conf
 
