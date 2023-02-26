@@ -1,3 +1,11 @@
+# ART
+dalvik.vm.dex2oat64.enabled=true
+dalvik.vm.boot-dex2oat-threads=8
+dalvik.vm.dex2oat-filter=speed
+dalvik.vm.dex2oat-threads=8
+dalvik.vm.image-dex2oat-filter=speed
+ro.sys.fw.dex2oat_thread_count=8
+
 # Bluetooth
 vendor.bluetooth.soc=cherokee
 
@@ -18,13 +26,6 @@ debug.sf.latch_unsignaled=1
 
 # CNE
 persist.cne.feature=1
-
-# Dalvik
-pm.dexopt.install=speed-profile
-pm.dexopt.ab-ota=speed-profile
-pm.dexopt.bg-dexopt=speed-profile
-pm.dexopt.boot=verify
-pm.dexopt.first-boot=quicken
 
 # Deep Sleep
 pm.sleep_mode=1
@@ -53,15 +54,6 @@ ro.iorapd.enable=false
 iorapd.perfetto.enable=false
 iorapd.readahead.enable=false
 persist.device_config.runtime_native_boot.iorap_readahead_enable=false
-
-# LMK
-ro.lmk.kill_timeout_ms=100
-ro.lmk.use_minfree_levels=true
-ro.lmk.psi_complete_stall_ms=70
-ro.lmk.swap_free_low_percentage=20
-ro.lmk.swap_util_max=90
-ro.lmk.thrashing_limit=30
-ro.lmk.thrashing_limit_decay=50
 
 # Media
 media.aac_51_output_enabled=true

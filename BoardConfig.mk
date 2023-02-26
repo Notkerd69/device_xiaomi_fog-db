@@ -77,6 +77,9 @@ TARGET_USES_GRALLOC4 := true
 TARGET_USES_HWC2 := true
 TARGET_USES_ION := true
 
+# Dexpreopt
+WITH_DEXPREOPT := true
+
 # DTBO image
 BOARD_KERNEL_SEPARATED_DTBO := true
 
