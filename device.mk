@@ -346,7 +346,8 @@ PRODUCT_PACKAGES += \
     SettingsProviderFog \
     SystemUIFog \
     TelephonyFog \
-    WifiFog
+    WifiFog \
+    SimpleDeviceConfigFog
 
 # LibQti Perf
 PRODUCT_PACKAGES += \
