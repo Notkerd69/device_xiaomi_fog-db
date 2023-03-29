@@ -340,6 +340,7 @@ PRODUCT_PACKAGES += \
     SettingsFog \
     SettingsProviderFog \
     SystemUIFog \
+    SimpleDeviceConfigFog \
     TelephonyFog \
     WifiFog \
     NotchBarKiller \
