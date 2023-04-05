@@ -68,6 +68,7 @@ RELAX_USES_LIBRARY_CHECK=true
 TARGET_FS_CONFIG_GEN := $(DEVICE_PATH)/configs/config.fs
 
 # Display
+TARGET_DISABLE_POSTRENDER_CLEANUP := true
 TARGET_SCREEN_DENSITY := 320
 TARGET_USES_COLOR_METADATA := true
 TARGET_USES_DISPLAY_RENDER_INTENTS := true
@@ -102,12 +103,12 @@ $(DEVICE_PATH)/configs/vintf/framework_compatibility_matrix.xml
 DEVICE_MANIFEST_FILE += $(DEVICE_PATH)/configs/vintf/manifest.xml
 DEVICE_MATRIX_FILE += $(DEVICE_PATH)/configs/vintf/compatibility_matrix.xml
 
-ODM_MANIFEST_SKUS += nfc
-ODM_MANIFEST_NFC_FILES := $(DEVICE_PATH)/configs/vintf/manifest_nfc.xml
+ODM_MANIFEST_SKUS += c3qn
+ODM_MANIFEST_C3QN_FILES := $(DEVICE_PATH)/configs/vintf/manifest_c3qn.xml
 
 # Init
-TARGET_INIT_VENDOR_LIB := //$(DEVICE_PATH):init_xiaomi_fog
-TARGET_RECOVERY_DEVICE_MODULES := init_xiaomi_fog
+TARGET_INIT_VENDOR_LIB := //$(DEVICE_PATH):libinit_fog
+TARGET_RECOVERY_DEVICE_MODULES := libinit_fog
 
 # Kernel
 BOARD_KERNEL_BASE        := 0x00000000
