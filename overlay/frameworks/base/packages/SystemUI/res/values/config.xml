@@ -42,4 +42,9 @@
     
     <!-- Smart replies in notifications: Whether we disable the feature unless the app targets P -->
     <bool name="config_smart_replies_in_notifications_requires_targeting_p">false</bool>
+
+        <!-- Auth ripple animation duration
+         AOSP default is 1533 -->
+    <item name="auth_ripple_animation_duration" format="float" type="dimen">1533.0</item>
+    
 </resources>
