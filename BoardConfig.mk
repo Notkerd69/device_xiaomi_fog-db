@@ -70,7 +70,7 @@ TARGET_FS_CONFIG_GEN := $(DEVICE_PATH)/configs/config.fs
 # Display
 TARGET_DISABLE_POSTRENDER_CLEANUP := true
 TARGET_GRALLOC_HANDLE_HAS_RESERVED_SIZE := true
-TARGET_SCREEN_DENSITY := 320
+TARGET_SCREEN_DENSITY := 260
 TARGET_USES_COLOR_METADATA := true
 TARGET_USES_DISPLAY_RENDER_INTENTS := true
 TARGET_USES_DRM_PP := true
@@ -97,8 +97,7 @@ TARGET_USES_CUSTOM_DISPLAY_INTERFACE := true
 
 # HIDL
 DEVICE_FRAMEWORK_COMPATIBILITY_MATRIX_FILE := \
-    $(DEVICE_PATH)/configs/vintf/framework_compatibility_matrix.xml \
-    vendor/lineage/config/device_framework_matrix.xml
+$(DEVICE_PATH)/configs/vintf/framework_compatibility_matrix.xml
 DEVICE_MANIFEST_FILE += $(DEVICE_PATH)/configs/vintf/manifest.xml
 DEVICE_MATRIX_FILE += $(DEVICE_PATH)/configs/vintf/compatibility_matrix.xml
 
