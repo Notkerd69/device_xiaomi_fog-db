@@ -173,6 +173,7 @@ dalvik.vm.image-dex2oat-threads=8
 # Display
 debug.sf.disable_client_composition_cache=1
 debug.sf.enable_egl_image_tracker=1
+debug.sf.enable_advanced_sf_phase_offset=1
 debug.sf.high_fps_early_gl_phase_offset_ns=-5000000
 debug.sf.high_fps_early_phase_offset_ns=-5000000
 debug.sf.high_fps_late_app_phase_offset_ns=1000000
@@ -247,7 +248,6 @@ debug.mdpcomp.logs=0
 debug.sdm.support_writeback=0
 debug.sf.disable_client_composition_cache=1
 debug.sf.enable_advanced_sf_phase_offset=1
-debug.sf.enable_gl_backpressure=1
 debug.sf.hw=0
 persist.sys.sf.color_mode=0
 persist.sys.sf.color_saturation=1.0
