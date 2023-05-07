@@ -1,0 +1,8 @@
+on property:sys.usb.state=none
+     su -c "svc usb setFunctions mtp"
+--root_seclabel=u:r:su:s0
+    class core
+    socket adbd seqpacket 660 system system
+    disabled
+    updatable
+    seclabel u:r:mtp:s0
