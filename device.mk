@@ -344,7 +344,8 @@ PRODUCT_PACKAGES += \
     TelephonyFog \
     WifiFog \
     NotchBarKiller \
-    ApertureFog
+    ApertureFog \
+    SettingsLibFog
 
 # Partitions
 PRODUCT_USE_DYNAMIC_PARTITIONS := true
