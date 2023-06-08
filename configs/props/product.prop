@@ -1,4 +1,54 @@
+# App
+persist.device_config.runtime_native_boot.iorap_perfetto_enable=true
+
 # Audio
 audio.offload.min.duration.secs=30
 audio.sys.offload.pstimeout.secs=3
 ro.config.vc_call_vol_steps=11
+
+# Display
+debug.sf.disable_backpressure=1
+
+# Google Photos
+debug.photos.eraser_camo=1
+debug.photos.eraser_suggestion=1
+debug.photos.force_pixel_eol=1
+debug.photos.p_editr.eraser=1
+
+# Memory management
+persist.sys.fw.bg_apps_limit?=48
+persist.sys.fw.use_trim_settings?=true
+persist.sys.fw.empty_app_percent?=50
+persist.sys.fw.trim_empty_percent?=100
+persist.sys.fw.trim_cache_percent?=100
+persist.sys.fw.trim_enable_memory?=2147483648
+persist.sys.fw.bservice_age?=120000
+persist.sys.fw.bservice_limit?=6
+persist.sys.fw.bservice_enable?=true
+ro.telephony.block_binder_thread_on_incoming_calls=false
+
+# Bluetooth profiles to enabled
+bluetooth.profile.asha.central.enabled?=true
+bluetooth.profile.a2dp.source.enabled?=true
+bluetooth.profile.avrcp.target.enabled?=true
+bluetooth.profile.bas.client.enabled?=true
+bluetooth.profile.gatt.enabled?=true
+bluetooth.profile.hfp.ag.enabled?=true
+bluetooth.profile.hid.device.enabled?=true
+bluetooth.profile.hid.host.enabled?=true
+bluetooth.profile.map.server.enabled?=true
+bluetooth.profile.opp.enabled?=true
+bluetooth.profile.pan.nap.enabled?=true
+bluetooth.profile.pan.panu.enabled?=true
+bluetooth.profile.pbap.server.enabled?=true
+bluetooth.profile.sap.server.enabled?=true
+
+# Set the Bluetooth Class of Device
+# Service Field: 0x5A -> 90
+#    Bit 17: Networking
+#    Bit 19: Capturing
+#    Bit 20: Object Transfer
+#    Bit 22: Telephony
+# MAJOR_CLASS: 0x02 -> 2 (Phone)
+# MINOR_CLASS: 0x0C -> 12 (Smart Phone)
+bluetooth.device.class_of_device=90,2,12

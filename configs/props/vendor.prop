@@ -1,49 +1,21 @@
 # Audio
-audio_para_version=C3Q-Audiopara-V01-20211102
 aaudio.hw_burst_min_usec=2000
 aaudio.mmap_exclusive_policy=2
-aaudio.mmap_policy=2
+aaudio.mmap_policy=1
 persist.vendor.audio.ambisonic.auto.profile=false
 persist.vendor.audio.ambisonic.capture=false
 persist.vendor.audio.apptype.multirec.enabled=false
 persist.vendor.audio.avs.afe_api_version=2
-persist.vendor.audio.fluence.speaker=false
+persist.vendor.audio.fluence.speaker=true
 persist.vendor.audio.fluence.tmic.enabled=false
-persist.vendor.audio.fluence.voicecall=false
+persist.vendor.audio.fluence.voicecall=true
 persist.vendor.audio.fluence.voicecomm=true
-persist.vendor.audio.fluence.voicerec=true
+persist.vendor.audio.fluence.voicerec=false
 persist.vendor.audio.ras.enabled=false
 persist.vendor.audio.spv3.enable=true
 persist.vendor.audio.voicecall.speaker.stereo=true
-ro.vendor.audio.afe.record=true
 ro.vendor.audio.misound.bluetooth.enable=true
-ro.vendor.audio.scenario.support=false
-ro.vendor.audio.sdk.fluencetype=none
-ro.vendor.audio.sdk.ssr=false
-ro.vendor.audio.sfx.earadj=true
-ro.vendor.audio.sfx.scenario=false
-ro.vendor.audio.sos=true
-ro.vendor.audio.soundfx.type=mi
-ro.vendor.audio.soundfx.usb=true
-ro.vendor.audio.soundtrigger.appdefine.cnn.level=31
-ro.vendor.audio.soundtrigger.appdefine.gmm.level=55
-ro.vendor.audio.soundtrigger.appdefine.gmm.user.level=50
-ro.vendor.audio.soundtrigger.appdefine.vop.level=10
-ro.vendor.audio.soundtrigger.lowpower=true
-ro.vendor.audio.soundtrigger.training.level=50
-ro.vendor.audio.soundtrigger.xanzn.cnn.level=70
-ro.vendor.audio.soundtrigger.xanzn.gmm.level=45
-ro.vendor.audio.soundtrigger.xanzn.gmm.user.level=30
-ro.vendor.audio.soundtrigger.xanzn.vop.level=10
-ro.vendor.audio.soundtrigger.xatx.cnn.level=27
-ro.vendor.audio.soundtrigger.xatx.gmm.level=50
-ro.vendor.audio.soundtrigger.xatx.gmm.user.level=40
-ro.vendor.audio.soundtrigger.xatx.vop.level=10
-ro.vendor.audio.soundtrigger=sva
-ro.vendor.audio.spk.clean=true
-ro.vendor.audio.surround.support=false
-ro.vendor.audio.vocal.support=false
-ro.vendor.audio.voice.change.support=true
+ro.vendor.audio.voice.change.version=2
 vendor.audio.adm.buffering.ms=6
 vendor.audio.dolby.ds2.enabled=false
 vendor.audio.dolby.ds2.hardbypass=false
@@ -94,7 +66,7 @@ vendor.audio.flac.sw.decoder.24bit=true
 vendor.audio.hal.boot.timeout.ms=20000
 vendor.audio.hal.output.suspend.supported=true
 vendor.audio.hw.aac.encoder=true
-vendor.audio.offload.buffer.size.kb=32
+vendor.audio.offload.buffer.size.kb=256
 vendor.audio.offload.gapless.enabled=true
 vendor.audio.offload.multiaac.enable=true
 vendor.audio.offload.multiple.enabled=false
@@ -114,10 +86,6 @@ vendor.voice.path.for.pcm.voip=true
 
 # Bluetooth
 bluetooth.device.class_of_device=90,2,12
-bluetooth.hardware.power.idle_cur_ma=7
-bluetooth.hardware.power.operating_voltage_mv=3700
-bluetooth.hardware.power.rx_cur_ma=75
-bluetooth.hardware.power.tx_cur_ma=93
 bluetooth.profile.asha.central.enabled?=true
 bluetooth.profile.a2dp.source.enabled?=true
 bluetooth.profile.avrcp.target.enabled?=true
@@ -145,12 +113,13 @@ persist.vendor.bt.aac_frm_ctl.enabled=true
 persist.vendor.qcom.bluetooth.soc=cherokee
 persist.vendor.service.bdroid.sibs=false
 ro.bluetooth.a2dp_offload.supported=true
+persist.vendor.service.bdroid.sibs=false
 ro.vendor.bluetooth.wipower=false
-vendor.hw.fm.init=0
 vendor.qcom.bluetooth.soc=cherokee
+vendor.hw.fm.init=0
 
-# Charger
-persist.vendor.quick.charge=1
+# Camera
+persist.vendor.camera.logInfoMask=false
 
 # Crypto
 ro.crypto.allow_encrypt_override=true
@@ -169,13 +138,11 @@ dalvik.vm.image-dex2oat-threads=8
 
 # Display
 debug.sf.disable_client_composition_cache=1
-debug.sf.enable_egl_image_tracker=1
-debug.sf.high_fps_early_gl_phase_offset_ns=-5000000
-debug.sf.high_fps_early_phase_offset_ns=-5000000
-debug.sf.high_fps_late_app_phase_offset_ns=1000000
-debug.sf.high_fps_late_sf_phase_offset_ns=-5000000
 debug.sf.predict_hwc_composition_strategy=0
+debug.sf.enable_transaction_tracing=false
 debug.sf.treat_170m_as_sRGB=1
+debug.sf.enable_egl_image_tracker=1
+ro.config.avoid_gfx_accel=true
 ro.surface_flinger.force_hwc_copy_for_virtual_displays=true
 ro.surface_flinger.has_HDR_display=true
 ro.surface_flinger.has_wide_color_display=true
@@ -208,6 +175,7 @@ vendor.display.enable_rc_support=1
 vendor.display.enable_rounded_corner=0
 vendor.display.normal_noc_efficiency_factor=0.85
 vendor.display.qdcm.disable_factory_mode=1
+vendor.display.enable_force_split=1
 vendor.display.qdcm.mode_combine=1
 vendor.display.secure_preview_buffer_format=420_sp
 vendor.display.use_layer_ext=0
@@ -222,30 +190,24 @@ vendor.display.idle_time=0
 vendor.display.svi.config=1
 vendor.display.svi.config_path=/vendor/etc/SVIConfig.xml
 
-# DRM
-drm.service.enabled=true
-
 # DPM
 persist.vendor.dpmhalservice.enable=1
-
-# FRP
-ro.frp.pst=/dev/block/bootdevice/by-name/frp
 
 # Graphics
 debug.egl.hw=0
 debug.mdpcomp.logs=0
-debug.sdm.support_writeback=0
-debug.sf.disable_backpressure=1
 debug.sf.enable_advanced_sf_phase_offset=1
 debug.sf.hw=0
-persist.sys.sf.color_mode=0
+persist.sys.sf.color_mode=9
 persist.sys.sf.color_saturation=1.0
+persist.sys.sf.native_mode=2
 ro.hardware.egl=adreno
 ro.hardware.vulkan=adreno
 ro.opengles.version=196610
+debug.sf.predict_hwc_composition_strategy=0
 
-# Media
-vendor.mm.enable.qcom_parser=16777215
+# Logs
+persist.log.tag.GoogleTagManager=S
 
 # Media Codecs
 debug.stagefright.ccodec=1
@@ -254,41 +216,51 @@ debug.stagefright.omx_default_rank.sw-audio=1
 
 # Netflix Properties
 vendor.netflix.bsp_rev=Q6115-31409-1
+vendor.media.target.version=3
 
 # NFC
-ro.hardware.nfc_nci=pn8x
 ro.vendor.se.type=HCE,UICC
 
 # Perf
 ro.vendor.extension_library=libqti-perfd-client.so
 ro.vendor.perf-hal.ver=2.2
-ro.vendor.perf.scroll_opt=true
-ro.vendor.qspm.enable=true
-vendor.pasr.activemode.enabled=true
-vendor.power.pasr.enabled=true
+
+# Phantom process monitoring
+sys.fflag.override.settings_enable_monitor_phantom_procs=false
+
+# Printk
+persist.vendor.console.silent.config=1
+
 
 # Radio
 persist.radio.multisim.config=dsds
 persist.vendor.data.iwlan.enable=true
-persist.vendor.qti.telephony.vt_cam_interface=2
 persist.vendor.radio.apm_sim_not_pwdn=1
+persist.vendor.qti.telephony.vt_cam_interface=2
 persist.vendor.radio.atfwd.start=true
 persist.vendor.radio.custom_ecc=1
 persist.vendor.radio.data_con_rprt=1
+persist.sys.cnss_diag.enable=false
+persist.sys.tcpdump.enable=false
 persist.vendor.radio.enable_temp_dds=true
 persist.vendor.radio.enableadvancedscan=true
 persist.vendor.radio.manual_nw_rej_ct=1
 persist.vendor.radio.mt_sms_ack=30
 persist.vendor.radio.procedure_bytes=SKIP
 persist.vendor.radio.rat_on=combine
-persist.vendor.radio.report_codec=1
 persist.vendor.radio.sib16_support=1
 persist.vendor.radio.snapshot_enabled=1
 persist.vendor.radio.snapshot_timer=5
+persist.vendor.radio.report_codec=1
 persist.vendor.radio.vdp_on_ims_cap=1
+ro.telephony.default_network=22,20
+telephony.lteOnCdmaDevice=1
 
-# RIL
-vendor.rild.libpath=/vendor/lib64/libril-qc-hal-qmi.so
+# QSPM
+ro.vendor.qspm.enable=true
+vendor.pasr.activemode.enabled=true
+vendor.power.pasr.enabled=true
+ro.vendor.perf.scroll_opt=true
 
 # Sensors
 persist.vendor.sensors.debug.ssc_qmi_debug=true
@@ -302,13 +274,25 @@ vendor.sys.thermal.data.path=/data/vendor/thermal/
 
 # USB
 vendor.usb.diag.func.name=diag
+vendor.usb.dpl.inst.name=dpl
+vendor.usb.qdss.inst.name=qdss
+vendor.usb.rmnet.func.name=gsi
+vendor.usb.rmnet.inst.name=rmnet
+vendor.usb.rndis.func.name=gsi
 vendor.usb.use_ffs_mtp=0
+vendor.usb.use_gadget_hal=0
 
 # Wi-Fi
 wifi.aware.interface=wifi-aware0
 
 # WLAN
 ro.telephony.iwlan_operation_mode=legacy
+ro.hardware.wlan.dbs=0
+
+# Suspend properties
+suspend.short_suspend_threshold_millis=2000
+suspend.short_suspend_backoff_enabled=true
+suspend.max_sleep_time_millis=40000
 
 # SoC
 ro.soc.manufacturer=QTI
