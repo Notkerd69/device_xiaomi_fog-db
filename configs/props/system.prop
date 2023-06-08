@@ -129,6 +129,21 @@ ril.subscription.types=NV,RUIM
 debug.cpurend.vsync=false
 rild.libpath=/vendor/lib64/libril-qc-hal-qmi.so
 
+# Removing Qpr2 lags
+debug.hwui.use_hint_manager=true
+debug.hwui.target_cpu_time_percent=30
+ro.hwui.render_ahead=15
+debug.sf.enable_transaction_tracing=false
+debug.sf.disable_client_composition_cache=1
+debug.sdm.support_writeback=0
+ro.qualcomm.cabl=0
+debug.cpurend.vsync=false
+debug.sf.enable_egl_image_tracker=1
+debug.sf.auto_latch_unsignaled=true
+debug.sf.disable_client_composition_cache=1
+ro.sf.compbypass.enable=0
+persist.sys.scrollingcache=5
+
 # Time-services
 persist.timed.enable=true
 
