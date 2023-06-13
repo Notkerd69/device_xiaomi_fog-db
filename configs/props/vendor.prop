@@ -138,6 +138,12 @@ ro.crypto.allow_encrypt_override=true
 ro.crypto.volume.filenames_mode=aes-256-cts
 
 # Dalvik
+pm.dexopt.boot=verify
+pm.dexopt.first-boot=quicken
+pm.dexopt.bg-dexopt=everything
+pm.dexopt.install=speed-profile
+dalvik.vm.image-dex2oat-filter=speed
+dalvik.vm.dex2oat64.enabled=true
 dalvik.vm.systemuicompilerfilter=speed
 
 # Dex2oat
