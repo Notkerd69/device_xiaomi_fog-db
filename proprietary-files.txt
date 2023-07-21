@@ -944,44 +944,6 @@ vendor/lib64/libmlipay@1.1.so|882d992cb017120a2d1f2b82817718eb53d57041
 vendor/lib64/libwvkeybox.so|f0425e7cc15d0740763df190c56155f874b9c32a
 vendor/lib64/vendor.xiaomi.hardware.mtdservice@1.3.so|28b36113816dcca6def9a6c7710b2e5490b398b6
 
-# Modules - from MIUI
-vendor/lib/modules/audio_adsp_loader.ko|6d8d6ba50a9318d2c9563d99ddf20d20b2600af2
-vendor/lib/modules/audio_apr.ko|985e5a1f3caacb7daa8715bbfdb1ae04385a6a1b
-vendor/lib/modules/audio_aw87xxx.ko|2f4b2650d4b17453afaff82f43e60320d741d388
-vendor/lib/modules/audio_bolero_cdc.ko|d19e691e688f8fa81a60bc2fb33ebb5d4ee56859
-vendor/lib/modules/audio_fs1599.ko|002a9cc7fceb26a76241e27b01917cd6cc55ed04
-vendor/lib/modules/audio_machine_bengal.ko|b17ce628668742d2a62b0b2d06ccc47195233d9e
-vendor/lib/modules/audio_mbhc.ko|d9a07f2d2ace26837c171b0bd1d1fb26318bfc07
-vendor/lib/modules/audio_native.ko|11629d8f574c4762c15c142d430dca75c3d8b1cc
-vendor/lib/modules/audio_pinctrl_lpi.ko|e1094d5508c139c955b94b9468328d4d1ee3cb1f
-vendor/lib/modules/audio_platform.ko|cb86173fd6ac4e2b20f6c457d01fc858323fc23e
-vendor/lib/modules/audio_pm2250_spmi.ko|9a08c62b02d9ebe87bc15766a57d776891fbb2c8
-vendor/lib/modules/audio_q6.ko|a064473e8cfaedd503d5be5cd9cae749b9161b31
-vendor/lib/modules/audio_q6_notifier.ko|d6809d1c22a36205316aa9cfe5d559e79bf65558
-vendor/lib/modules/audio_q6_pdr.ko|480722de5e185ff94e7366082a24b0185810515f
-vendor/lib/modules/audio_rouleur.ko|381ade6438103f72b7511724a648f74b909cc114
-vendor/lib/modules/audio_rouleur_slave.ko|d61143fc5ab347bde0da6e4670e9a79ea06389cf
-vendor/lib/modules/audio_rx_macro.ko|163b2d0c174b452fa8fd6f783971ed9226bd24f2
-vendor/lib/modules/audio_snd_event.ko|0e6ec070c243fe3d7c75e135afeb897d2785a0eb
-vendor/lib/modules/audio_stub.ko|58c595099a4a92b05e674c29c22ef9c5b3083735
-vendor/lib/modules/audio_swr.ko|97bd5309e2d7058074d1a83ee0d963a1879f908e
-vendor/lib/modules/audio_swr_ctrl.ko|e5b808dec28e5fea47bec822c22c2c2c202fa106
-vendor/lib/modules/audio_tx_macro.ko|05e9d4779f0a3921f357c6ef521ad0e39273d36b
-vendor/lib/modules/audio_usf.ko|214e0ade0cd5bdce531ccd44f0f06372fed04f90
-vendor/lib/modules/audio_va_macro.ko|0dfe1658bbc22019882fe392d8845765e53b86fc
-vendor/lib/modules/audio_wcd937x.ko|3e49a5f60e1ab7327ce73227cb789722e5118fb3
-vendor/lib/modules/audio_wcd937x_slave.ko|1773eff10827bdfa8d4a83050fa9902a0cd3c081
-vendor/lib/modules/audio_wcd9xxx.ko|2ce07f4bdaba4602a2e4d8feaeac6716201177a5
-vendor/lib/modules/audio_wcd_core.ko|9df88a982d95cd5f84bb24d80ce74147937c6778
-vendor/lib/modules/audio_wsa881x_analog.ko|3ea497901635eb456a2ca5144772aec121266c50
-vendor/lib/modules/exfat.ko|aaf83c14ffe4cc7202b3d73fbaec8e84d89d6f0e
-vendor/lib/modules/modules.alias|b247b1cc933215b923cab1e5bcc64c6277547999
-vendor/lib/modules/modules.dep|4229546d67fa563412c1707255455aad76ce65c1
-vendor/lib/modules/modules.load|75374722e67477e06a9d06457b7b6465a2ea9896
-vendor/lib/modules/modules.softdep|071ea5081f0d210604b6d7c38c011ff4b8bb6380
-vendor/lib/modules/qca_cld3_wlan.ko|d7f89a62216be4dddf4b8c289c67632442208004
-vendor/lib/modules/rdbg.ko|e86efddf6a948a6eab286780a68d434409523391
-
 # Neural networks - from MIUI
 vendor/bin/hw/android.hardware.neuralnetworks@1.3-service-qti|7c06937238a69fbc6399def79ce493c05dadd627
 vendor/etc/init/android.hardware.neuralnetworks@1.3-service-qti.rc|4b7f2c5f914f3eef38f19936c0a06efc09b5b28c
