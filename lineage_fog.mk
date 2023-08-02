@@ -16,10 +16,9 @@ TARGET_BOOT_ANIMATION_RES := 720
 TARGET_SUPPORTS_QUICK_TAP := true
 TARGET_BUILD_APERTURE_CAMERA := true
 TARGET_EXCLUDES_AUDIOFX := true
-RISING_MAINTAINER := Notkerd69
-RISING_OFFICIAL := true
-TARGET_ENABLE_BLUR := true
-WITH_GMS := false
+RISING_MAINTAINER := Notkerd
+RISING_BUILDTYPE := OFFICIAL
+WITH_GMS := true
 
 # Inherit from fog device
 $(call inherit-product, device/xiaomi/fog/device.mk)
